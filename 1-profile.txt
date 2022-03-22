@@ -1,0 +1,52 @@
+!/bin/bash
+#lire le paramètre d'entrée SIGACS 
+read -p "entrer le SIGACS: " SIGACS ;
+#rechercher et modifier SIGACS 
+sed -i "s/^    SIGACS.*/    SIGACS=$SIGACS/"  .profile ;
+
+#lire le paramètre d'entée SIGADB
+read -p "entrer SIGADB: "     SIGADB;
+#rechercher et modifier SIGADB 
+sed -i "s/^    SIGADB.*/    SIGADB=$SIGADB/" .profile ;
+
+#lire le paramètre d'entée CDPLPH
+read -p "entrer CDPLPH: "     CDPLPH;
+#rechercher et modifier CDPLPH 
+sed -i "s/^    CDPLPH.*/    CDPLPH=$CDPLPH/" .profile ;
+
+#lire le paramètre d'entée PATH
+read -p "entrer PATH:" PATH;
+#rechercher et modifier PATH 
+sed -i "s%^    PATH=/admin.*%    PATH=$path%" .profile ;
+
+#lire le paramètre d'entée ORADIR
+read -p "enter ORADIR: " ORADIR 
+#rechercher et modifier ORADIR
+sed -i "s/^    ORADIR.*/    ORADIR=$ORADIR/" .profile ;
+
+#lire le paramètre d'entée ORACL_SID
+read -p "entrer ORACLE_SID: " ORACLE_SID;
+#rechercher et modifier ORACL_SID
+sed -i "s/^    ORACLE_SID.*/    ORACLE_SID=$ORACLE_SID/" .profile ;
+
+#lire le paramètre d'entée TWO_TASK
+read -p "entrer  TWO_TASK: " TWO_TASK ;
+#rechercher et modifier TWO_TASK
+sed -i "s/TWO_TASK=.*/TWO_TASK=$TWO_TASK/" .profile ;
+#sed -i  "s/export TWO_TASK=.*/export TWO_TASK=$TWO_TASK/" .profile ;
+
+#lire le paramètre d'entée COBDIR
+read -p "entrer COBDIR: " COBDIR
+#rechercher et modifier COBDIR
+sed -i "s/^    COBDID=.*/    COBDID=$COBDIR/" .profile ;
+
+#lire le paramètre d'entée JAVA_HOME
+read -p "entrer JAVA_HOME : " JAVA_HOME
+#rechercher et modifier JAVA_HOME
+sed -i "s/^    JAVA_HOME.*/    JAVA_HOME=$JAVA_HOME/" .profile ;
+
+#lire le paramètre d'entée EnvName
+read -p "entrer EnvName : " EnvName
+#rechercher et modifier EnvName
+sed -i "s/^EnvName.*/EnvName=$EnvName/" .profile ;
+

@@ -1,0 +1,22 @@
+#!/bin/bash
+#ecrire le paramètre d'entrée SERVICE
+read -p "saisir le service: " SERVICE  ;
+#recherche et modification du SERVICE
+sed -i "s/^SERVICE=.*/SERVICE=$SERVICE/" $SIGACS/adm/cfg/initserver ;
+
+#ecrire le paramètre d'entrée COBPATH
+read -p "saisir le COBPATH: " COBPATH  ;
+#recherche et modification du COBPATH
+sed -i "s/^COBPATH=.*/COBPATH=$COBPATH/" $SIGACS/adm/cfg/initserver ;
+
+#ecrire le paramètre d'entrée ORACLE_SID
+read -p "saisir le ORACLE_SID: " ORACLE_SID  ;
+#recherche et modification du ORACLE_SID
+sed -i "s/^ORACLE_SID=.*/ORACLE_SID=$ORACLE_SID/" $SIGACS/adm/cfg/initserver ;
+
+#ecrire le paramètre d'entrée CDPLPH
+read -p "saisir le CDPLPH: " CDPLPH  ;
+#recherche et modification du CDPLPH
+sed -i "s/^CDPLPH=.*/CDPLPH=$CDPLPH/" $SIGACS/adm/cfg/initserver ;
+
+
